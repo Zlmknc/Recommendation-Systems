@@ -36,13 +36,12 @@ Leave-One-Out Cross-Validation (seed=42) ile k = {10, 25, 50, 100} değerleri i�
 
 ## Proje Klasör Yapısı
 
-
+```bash
 ÖneriSis/
-├── ÖneriSis.ipynb              ← Ana Jupyter Notebook
-├── Assignment Guidelines/      ← Ödev talimatları
+├── ÖneriSis.ipynb                  ← Ana Jupyter Notebook
+├── Assignment Guidelines/
 ├── README.md
 ├── Final reports/
-│   └── (PDF + grafikler)
 ├── VeriSetiYükleme/
 ├── VeriÖnİşleme/
 ├── 1 - User-Based CF/
@@ -50,7 +49,7 @@ Leave-One-Out Cross-Validation (seed=42) ile k = {10, 25, 50, 100} değerleri i�
 │   └── Predict (PCC fonk. kullanılır)
 ├── 2 - Item-Based CF/
 │   ├── ACS (Fonksiyon Hesaplanır)
-│   ├── build_item_similarity_matrix (item_sim_matrix.pkl)
+│   ├── build_item_similarity_matrix(item_sim_matrix.pkl)
 │   └── Predict (ACS matrisi kullanılır)
 └── MAE Sonuç Karşılaştırma
 
