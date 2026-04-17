@@ -34,19 +34,24 @@ Leave-One-Out Cross-Validation (seed=42) ile k = {10, 25, 50, 100} değerleri i�
 - 943 kullanıcı, 1682 film, ~100.000 oy
 - Sparsity: %93.70
 
-├── ÖneriSis.ipynb          ← Ana Jupyter Notebook
-├── Assignment Guidelines
+## Proje Klasör Yapısı
+
+
+ÖneriSis/
+├── ÖneriSis.ipynb              ← Ana Jupyter Notebook
+├── Assignment Guidelines/      ← Ödev talimatları
 ├── README.md
 ├── Final reports/
-    ├── VeriSetiYükleme
-    ├── VeriÖnİşleme
-    ├── 1 – User-Based CF 
-        ├── PCC (Fonksiyon Hesaplanır)
-        ├── Predict (PCC fonk. kullanılır)
-    ├──  2 – Item-Based CF 
-        ├── ACS 
-        └── Predict 
-            └── build_item_similarity_matrix(item_sim_matrix.pkl)
-    └── MAE Sonuç Karşılaştırma
+│   └── (PDF + grafikler)
+├── VeriSetiYükleme/
+├── VeriÖnİşleme/
+├── 1 - User-Based CF/
+│   ├── PCC (Fonksiyon Hesaplanır)
+│   └── Predict (PCC fonk. kullanılır)
+├── 2 - Item-Based CF/
+│   ├── ACS (Fonksiyon Hesaplanır)
+│   ├── build_item_similarity_matrix (item_sim_matrix.pkl)
+│   └── Predict (ACS matrisi kullanılır)
+└── MAE Sonuç Karşılaştırma
 
-Not: item_sim_matrix() fonksiyonu ilk çalıştırmada biraz zaman alabilir. Zaman alma durumundan kaynaklı bir kez çalıştırılıp .pkl dosyasında saklanır. Saklanan dosya dah sonrasında 'build_item_similarity_matrix' fonksiyonu içinde kullanılır.
+**Not:** `item_sim_matrix.pkl` dosyası Item-Based CF’de önceden hesaplanmış similarity matrisini saklamak için kullanılır.
