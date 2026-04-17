@@ -38,19 +38,20 @@ Leave-One-Out Cross-Validation (seed=42) ile k = {10, 25, 50, 100} değerleri i�
 
 ```bash
 ÖneriSis/
-├── ÖneriSis.ipynb                  ← Ana Jupyter Notebook
+├── ÖneriSis.ipynb
+    ├── VeriSetiYükleme/
+    ├── VeriÖnİşleme/                ← Ana Jupyter Notebook
+    ├── 1 - User-Based CF/
+    │   ├── PCC (Fonksiyon Hesaplanır)
+    │   └── Predict (PCC fonk. kullanılır)
+    ├── 2 - Item-Based CF/
+    │   ├── ACS (Fonksiyon Hesaplanır)
+    │   ├── build_item_similarity_matrix(item_sim_matrix.pkl)
+    │   └── Predict (ACS matrisi kullanılır)
+    └── MAE Sonuç Karşılaştırma
 ├── Assignment Guidelines/
 ├── README.md
-├── Final reports/
-├── VeriSetiYükleme/
-├── VeriÖnİşleme/
-├── 1 - User-Based CF/
-│   ├── PCC (Fonksiyon Hesaplanır)
-│   └── Predict (PCC fonk. kullanılır)
-├── 2 - Item-Based CF/
-│   ├── ACS (Fonksiyon Hesaplanır)
-│   ├── build_item_similarity_matrix(item_sim_matrix.pkl)
-│   └── Predict (ACS matrisi kullanılır)
-└── MAE Sonuç Karşılaştırma
+├── item-sim-matrix.pkl/
+└── Final reports/
 
 **Not:** `item_sim_matrix.pkl` dosyası Item-Based CF’de önceden hesaplanmış similarity matrisini saklamak için kullanılır.
