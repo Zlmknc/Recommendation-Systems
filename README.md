@@ -9,14 +9,14 @@
 ![Pandas](https://img.shields.io/badge/Pandas-2.x-green)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-3.x-yellow)
 
-## 📝 Proje Açıklaması
+## Proje Açıklaması
 Bu proje, **MovieLens 100K** veri seti üzerinde **User-Based Collaborative Filtering (Pearson Korelasyon Katsayısı - PCC)** ve **Item-Based Collaborative Filtering (Adjusted Cosine Similarity - ACS)** yöntemlerini **sıfırdan** (Surprise kütüphanesi kullanılmadan) implemente ederek karşılaştırmalı analiz etmektedir.
 
 Leave-One-Out Cross-Validation (seed=42) ile k = {10, 25, 50, 100} değerleri için MAE metriği ve hesaplama süreleri ölçülmüş, ayrıca %20 veri silme senaryosu ile sparsity etkisi incelenmiştir.
 
 **Sonuç:** Item-Based CF (k=10), User-Based CF’ye göre hem daha düşük MAE (**0.5853**) hem de **yaklaşık 90 kat daha hızlı** performans göstermiştir.
 
-## ✨ Özellikler
+## Özellikler
 - PCC ve ACS benzerlik metrikleri NumPy/Pandas ile sıfırdan yazıldı
 - Leave-One-Out Cross-Validation (tam ödev protokolü)
 - k = {10, 25, 50, 100} için kapsamlı deneyler
@@ -24,12 +24,29 @@ Leave-One-Out Cross-Validation (seed=42) ile k = {10, 25, 50, 100} değerleri i�
 - %20 sparsity artışı analizi
 - Tüm grafikler ve tablolar otomatik üretilir
 
-## 🛠️ Kullanılan Teknolojiler
+## Kullanılan Teknolojiler
 - **Python 3.x**
 - NumPy, Pandas, Matplotlib
 - Google Colab (önerilen) / Yerel ortam
 
-## 📊 Veri Seti
+## Veri Seti
 - **MovieLens 100K** (Grouplens)
 - 943 kullanıcı, 1682 film, ~100.000 oy
 - Sparsity: %93.70
+
+├── ÖneriSis.ipynb          ← Ana Jupyter Notebook
+├── Assignment Guidelines
+├── README.md
+├── Final reports/
+    ├── VeriSetiYükleme
+    ├── VeriÖnİşleme
+    ├── 1 – User-Based CF 
+        ├── PCC (Fonksiyon Hesaplanır)
+        ├── Predict (PCC fonk. kullanılır)
+    ├──  2 – Item-Based CF 
+        ├── ACS 
+        └── Predict 
+            └── build_item_similarity_matrix(item_sim_matrix.pkl)
+    └── MAE Sonuç Karşılaştırma
+
+Not: item_sim_matrix() fonksiyonu ilk çalıştırmada biraz zaman alabilir. Zaman alma durumundan kaynaklı bir kez çalıştırılıp .pkl dosyasında saklanır. Saklanan dosya dah sonrasında 'build_item_similarity_matrix' fonksiyonu içinde kullanılır.
