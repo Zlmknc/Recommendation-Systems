@@ -38,9 +38,9 @@ Leave-One-Out Cross-Validation (seed=42) ile k = {10, 25, 50, 100} değerleri i�
 
 ```bash
 ÖneriSis/
-├── ÖneriSis.ipynb
+├── ÖneriSis.ipynb                        ← Ana Jupyter Notebook
     ├── VeriSetiYükleme/
-    ├── VeriÖnİşleme/                ← Ana Jupyter Notebook
+    ├── VeriÖnİşleme/                
     ├── 1 - User-Based CF/
     │   ├── PCC (Fonksiyon Hesaplanır)
     │   └── Predict (PCC fonk. kullanılır)
