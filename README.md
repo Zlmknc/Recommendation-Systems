@@ -6,7 +6,7 @@ Bilgisayar Mühendisliği Yüksek Lisans, Öneri Sistemleri kapsamında hazırla
 
 ## İçindekiler
 
-| # | Tür | Başlık | Konu |
+| # | Tür | Başlık |  
 |---|---|---|---|---|
 | 1 | Work-1 | Collaborative Filtering: User-Based vs Item-Based | Klasik CF yöntemlerinin sıfırdan implementasyonu ve karşılaştırılması | 
 | 2 | Presentation-1 | Graph Recommendation Evolution | Öneri sistemlerinin matris çarpanlarına ayırmadan graf/GNN tabanlı yöntemlere evrimi | 
@@ -128,14 +128,23 @@ Ortak veri seti olarak her iki projede de **MovieLens-100K** kullanılmıştır;
 
 ```
 .
-├── Final_reports.pdf                                 # Ödev 1 raporu (CF: User-Based vs Item-Based)
-   ├──
-├── ÖneriSis.ipynb                                     # Ödev 1 kodu
-├── IGMC_Final_Doc.pdf                                 # Final Ödev raporu (IGMC)
-├── IGMC-Rec-Sys_2.ipynb                               # Final Ödev kodu
-├── IGMC_README.md                                     # IGMC projesine özel ayrıntılı README
-├── Graph_Recommendation_Evolution.pptx                # Sunum 1
-├── Pinterest_Graph_Recommendation_Architecture.pptx   # Sunum 2
+├── Work-1                                             # Ödev 1 raporu (CF: User-Based vs Item-Based)
+│   ├── AssignmentGuidlines.pdf
+│   ├── Final Reports.pdf                                     
+│   ├── item_sim_matrix.pkl                            
+│   ├── ÖneriSis.ipynb                                 # Ödev 1 kodu  
+├── Woek-2                                             # Ödev 1 kodu
+│   ├── 1904.12058v3.pdf                               # Referans Makale
+│   ├── FinalWork_Guidlines2026.pdf                    # Ödev 1 kodu
+│   ├── IGMC_Final_Doc.pdf                             # Final Ödev raporu (IGMC)
+|   ├── IGMC-Rec-Sys_2.ipynb                           # Final Ödev kodu
+├── Pre-1
+│   ├── P-1GraphRecommenddation_Evolution.pptx
+│   ├── Pre-Guidline.docx
+│   ├── Rec-Sys-Evolution.docx
+├── P2_Pinterest_Oneri_Sistemi_Analizi.docx
+├── P2-Pinterest_Graph_Recommendation_Architecture.pptx   # Sunum 2
+├── Presentation-2Guide.pdf
 └── README.md                                          # Bu dosya (ana / özet README)
 ```
 
